@@ -97,7 +97,13 @@ function NavigationMobile() {
       <div className="basis-0 bg-white grow min-h-px min-w-px relative shrink-0 w-full">
         <div className="size-full">
           <div className="box-border content-stretch flex items-center justify-center pb-[20px] pt-[20px] px-[20px] relative size-full">
-            <img src={imgLogo} alt="Lutsy" className="h-[32px] w-auto" />
+            <a
+              href="https://lutsy.studio"
+              className="inline-flex h-[32px] items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#485c11] focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded-full"
+              aria-label="Lutsy homepage"
+            >
+              <img src={imgLogo} alt="Lutsy" className="h-[32px] w-auto" />
+            </a>
           </div>
         </div>
       </div>
@@ -108,12 +114,16 @@ function NavigationMobile() {
 function NavigationDesktop() {
   return (
     <div className="hidden sm:flex box-border content-stretch items-center justify-between w-full pb-[40px] pt-[20px] px-0 relative shrink-0" data-name="Navigation desktop">
-      <div className="flex items-center gap-[12px]">
+      <a
+        href="https://lutsy.studio"
+        className="flex items-center gap-[12px] rounded-[8px] text-inherit no-underline transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#485c11] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+        aria-label="Lutsy homepage"
+      >
         <img src={imgLogo} alt="Lutsy" className="h-[40px] w-auto block" />
         <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.2] text-[#6f6f6f] text-[24px] tracking-[-1.2px] m-0" style={{ fontVariationSettings: "'opsz' 14" }}>
           Fresh-eyes UX review
         </p>
-      </div>
+      </a>
       <div className="shrink-0">
         <ButtonLinkout />
       </div>
