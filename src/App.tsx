@@ -74,7 +74,7 @@ function Arrow() {
 function ButtonLinkout() {
   return (
     <motion.a 
-      href="mailto:lutsy.studio@gmail.com"
+      href="mailto:contact@lutsy.studio"
       className="bg-[#485c11] box-border content-stretch cursor-pointer flex gap-[2px] items-center justify-center overflow-visible px-[16px] sm:px-[22px] py-[12px] sm:py-[14px] relative rounded-[1000px] shrink-0 text-[12px] sm:text-[14px]" 
       data-name="Button linkout"
       whileHover={{ scale: 1.05, backgroundColor: "#5a6e1a" }}
@@ -630,7 +630,7 @@ function Arrow1() {
 function ButtonLinkout1() {
   return (
     <motion.a 
-      href="mailto:lutsy.studio@gmail.com"
+      href="mailto:contact@lutsy.studio"
       className="bg-[#485c11] cursor-pointer relative rounded-[1000px] shrink-0 w-full max-w-[280px] block" 
       data-name="Button linkout"
       whileHover={{ scale: 1.05, backgroundColor: "#5a6e1a" }}
@@ -824,7 +824,7 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
             <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-black tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-              <a href="mailto:lutsy.studio@gmail.com" className="hover:text-[#485c11] transition-colors duration-200">lutsy.studio@gmail.com</a> • SF Bay Area (PST)
+              <a href="mailto:contact@lutsy.studio" className="hover:text-[#485c11] transition-colors duration-200">contact@lutsy.studio</a> • SF Bay Area (PST)
             </p>
             <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
               NDA-friendly • 5-7 day turnaround
@@ -856,7 +856,7 @@ function FloatingButton({ isVisible }: { isVisible: boolean }) {
   return (
     <div className={`fixed bottom-[20px] right-[20px] z-50 sm:hidden transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <a 
-        href="mailto:lutsy.studio@gmail.com"
+        href="mailto:contact@lutsy.studio"
         className="bg-[#485c11] cursor-pointer relative rounded-full shadow-lg block" 
         data-name="Floating button"
       >

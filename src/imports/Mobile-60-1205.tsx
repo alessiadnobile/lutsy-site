@@ -575,7 +575,7 @@ function Link() {
   return (
     <div className="absolute content-stretch flex h-[18.5px] items-start left-0 top-[0.5px] w-[98.594px]" data-name="Link">
       <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[19.6px] relative shrink-0 text-[14px] text-black text-nowrap tracking-[-0.07px] whitespace-pre" style={{ fontVariationSettings: "'opsz' 14" }}>
-        lutsy.studio@gmail.comcom
+        contact@lutsy.studiocom
       </p>
     </div>
   );
