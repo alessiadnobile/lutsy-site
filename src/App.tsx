@@ -121,7 +121,7 @@ function NavigationDesktop() {
       >
         <img src={imgLogo} alt="Lutsy" className="h-[40px] w-auto block" />
         <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.2] text-[#6f6f6f] text-[24px] tracking-[-1.2px] m-0" style={{ fontVariationSettings: "'opsz' 14" }}>
-          Fresh-eyes UX review
+          Fresh-eyes UX Review
         </p>
       </a>
       <div className="shrink-0">
@@ -812,11 +812,15 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
       <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-full">
         {/* Brand and tagline */}
         <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
-          <h3 className="font-['DM_Sans:Bold',_sans-serif] font-bold leading-[1.2] relative shrink-0 text-[20px] sm:text-[24px] text-[#485c11] tracking-[-0.5px] sm:tracking-[-0.6px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-            Lutsy
-          </h3>
+          <a
+            href="https://lutsy.studio"
+            className="inline-flex items-center justify-start rounded-[8px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#485c11] focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-opacity hover:opacity-80"
+            aria-label="Lutsy homepage"
+          >
+            <img src={imgLogo} alt="Lutsy" className="h-[40px] sm:h-[48px] w-auto" />
+          </a>
           <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] sm:text-[16px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.08px] max-w-[600px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-            Fresh-eyes UX review
+            Fresh-eyes UX Review
           </p>
         </div>
 
