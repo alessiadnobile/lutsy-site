@@ -999,7 +999,7 @@ function Paragraph1() {
     <div className="absolute h-[19.594px] left-0 top-0 w-[224.188px]" data-name="Paragraph">
       <Link />
       <p className="absolute font-['DM_Sans:Regular',_sans-serif] font-normal leading-[19.6px] left-[101.59px] text-[14px] text-black text-nowrap top-[-0.5px] tracking-[-0.07px] whitespace-pre" style={{ fontVariationSettings: "'opsz' 14" }}>
-        • SF Bay Area (PST)
+        • San Francisco, CA
       </p>
     </div>
   );

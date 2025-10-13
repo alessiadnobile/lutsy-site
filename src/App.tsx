@@ -824,7 +824,7 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
             <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-black tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-              <a href="mailto:contact@lutsy.studio" className="hover:text-[#485c11] transition-colors duration-200">contact@lutsy.studio</a> • SF Bay Area (PST)
+              <a href="mailto:contact@lutsy.studio" className="hover:text-[#485c11] transition-colors duration-200">contact@lutsy.studio</a> • San Francisco, CA
             </p>
             <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
               NDA-friendly • 5-7 day turnaround
