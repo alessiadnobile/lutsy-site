@@ -93,7 +93,10 @@ function ButtonLinkout() {
 
 function NavigationMobile() {
   return (
-    <nav className="fixed bg-white box-border content-stretch flex flex-col h-[78px] items-start left-0 overflow-clip p-0 right-0 rounded-bl-[20px] rounded-br-[20px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.05)] top-0 z-50 sm:hidden" data-name="Navigation mobile">
+    <nav
+      className="fixed bg-white box-border content-stretch flex flex-col h-[78px] items-start left-0 overflow-clip p-0 right-0 rounded-bl-[20px] rounded-br-[20px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.05)] top-0 z-50 sm:hidden"
+      data-name="Navigation mobile"
+    >
       <div className="basis-0 bg-white grow min-h-px min-w-px relative shrink-0 w-full">
         <div className="size-full">
           <div className="box-border content-stretch flex items-center justify-center pb-[20px] pt-[20px] px-[20px] relative size-full">
@@ -142,7 +145,7 @@ function HeroText() {
         animate={{ opacity: 1 }}
         transition={{ duration: isMobile ? 0 : 0.8, delay: isMobile ? 0 : 0.2, ease: "easeOut" }}
       >
-        No roasts.<br className="sm:hidden" /> Just fixes.
+        Find your product&apos;s<br className="hidden sm:block" /> blind spots.
       </motion.h1>
       <motion.h2 
         className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.3] sm:leading-[1.4] relative shrink-0 text-[24px] sm:text-[22px] md:text-[26px] lg:text-[30px] max-w-[343px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[1000px]" 
@@ -151,7 +154,7 @@ function HeroText() {
         animate={{ opacity: 1 }}
         transition={{ duration: isMobile ? 0 : 0.8, delay: isMobile ? 0 : 0.4, ease: "easeOut" }}
       >
-        founder-friendly audits to optimize what you have before any redesign
+        UX reviews to get more out of what you’re building.
       </motion.h2>
     </div>
   );
@@ -372,10 +375,10 @@ function ProblemCard({ title, description, delay = 0 }: { title: string; descrip
       <div className="min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col gap-[20px] items-start min-w-inherit pl-0 pr-[20px] sm:pr-[40px] py-[40px] relative w-full">
           <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
-            <h3 className="font-['Crimson_Text:Regular',_sans-serif] leading-none not-italic text-[16px] sm:text-[18px] text-black tracking-[-0.48px] sm:tracking-[-0.54px] w-full">
+            <h3 className="font-['Crimson_Text:Regular',_sans-serif] leading-none not-italic text-[16px] sm:text-[18px] text-black tracking-[-0.32px] sm:tracking-[-0.54px] w-full">
               {title}
             </h3>
-            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px] w-full" style={{ fontVariationSettings: "'opsz' 14" }}>
+            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px] w-full" style={{ fontVariationSettings: "'opsz' 14" }}>
               {description}
             </p>
           </div>
@@ -439,7 +442,7 @@ function ValueProp() {
         <h2 className="font-['Crimson_Text:Regular',_sans-serif] leading-[0.9] not-italic text-[50px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-black tracking-[-1.5px] sm:tracking-[-1.2px] md:tracking-[-1.5px] lg:tracking-[-1.8px]">
           Give me a week. You'll know what to change.
         </h2>
-        <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[15px] text-[#6f6f6f] tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+        <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
           I trace the real journeys, highlight the confusing bits, and rank the fixes.
         </p>
       </motion.div>
@@ -459,11 +462,11 @@ function DeliverableItem({ number, title, description, delay = 0 }: { number: st
       transition={{ duration: isMobile ? 0 : 0.6, delay: isMobile ? 0 : delay, ease: "easeOut" }}
     >
       <div className="flex gap-[16px] sm:gap-[20px] items-start">
-        <p className="font-['DM_Sans:Bold',_sans-serif] font-bold leading-[1.4] shrink-0 text-[#485c11] text-[14px] sm:text-[15px] text-nowrap" style={{ fontVariationSettings: "'opsz' 14" }}>
+        <p className="font-['DM_Sans:Bold',_sans-serif] font-bold leading-[1.4] shrink-0 text-[#485c11] text-[16px] sm:text-[15px] text-nowrap" style={{ fontVariationSettings: "'opsz' 14" }}>
           {number}
         </p>
         <div className="flex-1 min-w-0">
-          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-black" style={{ fontVariationSettings: "'opsz' 14" }}>
+          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-black" style={{ fontVariationSettings: "'opsz' 14" }}>
             <span className="font-['DM_Sans:Bold',_sans-serif] font-bold" style={{ fontVariationSettings: "'opsz' 14" }}>
               {title}
             </span>
@@ -491,7 +494,7 @@ function DeliverablesSection() {
           <h2 className="font-['Crimson_Text:Regular',_sans-serif] leading-[0.9] not-italic text-[50px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-black tracking-[-1.5px] sm:tracking-[-1.2px] md:tracking-[-1.5px] lg:tracking-[-1.8px] mb-[16px] sm:mb-[24px]">
             What you get
           </h2>
-          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
             Clear, actionable findings that show you exactly what's confusing users and how to fix it.
           </p>
         </motion.div>
@@ -558,10 +561,10 @@ function ProcessStep({ number, title, description, delay = 0, isFirst = false }:
             {number}
           </p>
           <div className="content-stretch flex flex-col gap-[16px] sm:gap-[20px] items-center sm:items-start relative shrink-0 w-full">
-            <h3 className="font-['Crimson_Text:Regular',_sans-serif] leading-none not-italic text-[16px] sm:text-[18px] text-black tracking-[-0.48px] sm:tracking-[-0.54px] w-full text-center sm:text-left">
+            <h3 className="font-['Crimson_Text:Regular',_sans-serif] leading-none not-italic text-[16px] sm:text-[18px] text-black tracking-[-0.32px] sm:tracking-[-0.54px] w-full text-center sm:text-left">
               {title}
             </h3>
-            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px] w-full text-center sm:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>
+            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px] w-full text-center sm:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>
               {description}
             </p>
           </div>
@@ -680,7 +683,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 What exactly do you audit?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 I walk through your product (website or app) as a first-time user would, documenting every point of friction—confusing copy, unclear flows, missing context, visual hierarchy issues. You get a deck with annotated screenshots and specific fixes.
               </AccordionContent>
             </AccordionItem>
@@ -689,7 +692,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 How long does it take?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 5–7 days from when I receive access. Urgent timelines? Let me know—I can sometimes fast-track.
               </AccordionContent>
             </AccordionItem>
@@ -698,7 +701,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 Do you redesign the product?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 No, but if you need designs for those fixes we can discuss it.
               </AccordionContent>
             </AccordionItem>
@@ -707,7 +710,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 What if I'm pre-launch?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 Perfect timing. A fresh-eyes review before you ship helps you avoid confusing early users. Just share a staging link or demo environment.
               </AccordionContent>
             </AccordionItem>
@@ -716,7 +719,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 Can you sign an NDA?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 Yes. Happy to sign yours or use a mutual template.
               </AccordionContent>
             </AccordionItem>
@@ -725,7 +728,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 What format is the deliverable?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 A slide deck with one issue per slide, severity labels, and a video walkthrough explaining the findings.
               </AccordionContent>
             </AccordionItem>
@@ -734,7 +737,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 Do you do user testing?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 This is an expert review, not moderated user testing. I simulate real user journeys based on UX best practices and your product's context.
               </AccordionContent>
             </AccordionItem>
@@ -743,7 +746,7 @@ function FAQSection() {
               <AccordionTrigger className="font-['Crimson_Text:Regular',_sans-serif] text-[18px] sm:text-[20px] text-black tracking-[-0.54px] sm:tracking-[-0.6px] sm:hover:text-[#485c11] transition-colors">
                 What's the pricing?
               </AccordionTrigger>
-              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+              <AccordionContent className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
                 Email me with details to get a quote.
               </AccordionContent>
             </AccordionItem>
@@ -772,7 +775,7 @@ function CTASection({ sectionRef }: { sectionRef?: React.RefObject<HTMLElement> 
           <h2 className="font-['Crimson_Text:Regular',_sans-serif] leading-[0.9] not-italic text-[50px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-black tracking-[-1.5px] sm:tracking-[-1.2px] md:tracking-[-1.5px] lg:tracking-[-1.8px]">
             Let's Connect
           </h2>
-          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[14px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
             Email your product URL + your goal; I'll propose a slot within 24 hours.
           </p>
           <ButtonLinkout1 />
@@ -819,7 +822,7 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
           >
             <img src={imgLogo} alt="Lutsy" className="h-[40px] sm:h-[48px] w-auto" />
           </a>
-          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] sm:text-[16px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.08px] max-w-[600px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+          <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[16px] sm:text-[16px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.08px] max-w-[600px]" style={{ fontVariationSettings: "'opsz' 14" }}>
             Fresh-eyes UX Review
           </p>
         </div>
@@ -827,10 +830,10 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
         {/* Contact and service info */}
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
           <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
-            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-black tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[16px] sm:text-[14px] text-black tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
               <a href="mailto:contact@lutsy.studio" className="hover:text-[#485c11] transition-colors duration-200">contact@lutsy.studio</a> • San Francisco, CA
             </p>
-            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+            <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[16px] sm:text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
               NDA-friendly • 5-7 day turnaround
             </p>
           </div>
@@ -848,7 +851,7 @@ function Footer({ onPrivacyClick }: { onPrivacyClick: () => void }) {
             Privacy
           </button>
         </div>
-        <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+        <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] relative shrink-0 text-[16px] sm:text-[14px] text-[#6f6f6f] tracking-[-0.07px]" style={{ fontVariationSettings: "'opsz' 14" }}>
           © 2025 Lutsy.
         </p>
       </div>
