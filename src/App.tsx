@@ -74,7 +74,7 @@ function Arrow() {
 function ButtonLinkout() {
   return (
     <motion.a 
-      href="mailto:contact@lutsy.studio"
+      href="https://cal.com/lutsy"
       className="bg-[#485c11] box-border content-stretch cursor-pointer flex gap-[2px] items-center justify-center overflow-visible px-[16px] sm:px-[22px] py-[12px] sm:py-[14px] relative rounded-[1000px] shrink-0 text-[12px] sm:text-[14px]" 
       data-name="Button linkout"
       whileHover={{ scale: 1.05, backgroundColor: "#5a6e1a" }}
@@ -633,7 +633,7 @@ function Arrow1() {
 function ButtonLinkout1() {
   return (
     <motion.a 
-      href="mailto:contact@lutsy.studio"
+      href="https://cal.com/lutsy"
       className="bg-[#485c11] cursor-pointer relative rounded-[1000px] shrink-0 w-full max-w-[280px] block" 
       data-name="Button linkout"
       whileHover={{ scale: 1.05, backgroundColor: "#5a6e1a" }}
@@ -643,7 +643,7 @@ function ButtonLinkout1() {
       <div className="flex flex-row items-center justify-center size-full">
         <div className="box-border content-stretch flex gap-[2px] items-center justify-center px-[22px] py-[14px] relative w-full">
           <p className="font-['DM_Sans:Bold',_sans-serif] font-bold leading-[1.4] relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[-0.35px] whitespace-pre" style={{ fontVariationSettings: "'opsz' 14" }}>
-            Send details
+            Book your slot
           </p>
           <div className="flex flex-row items-center self-stretch">
             <Arrow1 />
@@ -773,10 +773,10 @@ function CTASection({ sectionRef }: { sectionRef?: React.RefObject<HTMLElement> 
       <div className="flex flex-col items-center text-center max-w-[600px] mx-auto px-[20px] sm:px-[60px]">
         <div className="flex flex-col gap-[24px] sm:gap-[40px] items-center w-full">
           <h2 className="font-['Crimson_Text:Regular',_sans-serif] leading-[0.9] not-italic text-[50px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-black tracking-[-1.5px] sm:tracking-[-1.2px] md:tracking-[-1.5px] lg:tracking-[-1.8px]">
-            Let's Connect
+            Book a 15-min intro
           </h2>
           <p className="font-['DM_Sans:Regular',_sans-serif] font-normal leading-[1.4] text-[16px] sm:text-[15px] text-[#6f6f6f] tracking-[-0.07px] sm:tracking-[-0.075px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-            Email your product URL + your goal; I'll propose a slot within 24 hours.
+            Include your product link and goal. I’ll review them before our call.
           </p>
           <ButtonLinkout1 />
         </div>
@@ -863,7 +863,7 @@ function FloatingButton({ isVisible }: { isVisible: boolean }) {
   return (
     <div className={`fixed bottom-[20px] right-[20px] z-50 sm:hidden transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <a 
-        href="mailto:contact@lutsy.studio"
+        href="https://cal.com/lutsy"
         className="bg-[#485c11] cursor-pointer relative rounded-full shadow-lg block" 
         data-name="Floating button"
       >
