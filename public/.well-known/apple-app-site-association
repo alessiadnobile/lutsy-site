@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "JB9BYM9MJB.co.pique.app",
+        "paths": ["/product/*", "/profile/*"]
+      }
+    ]
+  }
+}
